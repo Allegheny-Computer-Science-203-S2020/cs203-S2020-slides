@@ -1,10 +1,10 @@
-# cs203-S2019-slides
+# cs203-S2020-slides
 
 This repository contains all presentation slides for Computer Science 203
 Fall 2017. Each HTML file in this repository contains one "deck" of slides for a
 module of this course. To learn more about the course in which these assignments
 were completed, please visit the [Computer Science 203 Fall 2017 GitHub
-Organization](https://github.com/Allegheny-Computer-Science-203-S2019). The
+Organization](https://github.com/Allegheny-Computer-Science-203-S2020). The
 source code of the slides uses
 [reveal.js](https://github.com/hakimel/reveal.js/) framework to control the
 display of each slide. I have developed a custom theme for the slides that
@@ -20,7 +20,7 @@ then acknowledge it in your own presentation slides?
 You can type the following command if you want to clone this repository:
 
 ```shell
-git clone https://github.com/Allegheny-Computer-Science-203-S2019/cs203-S2019-slides.git
+git clone https://github.com/Allegheny-Computer-Science-203-S2020/cs203-S2020-slides.git
 ```
 
 Please note that the presentation may use local fonts so that it can be
