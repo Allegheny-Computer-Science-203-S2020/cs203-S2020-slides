@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Computer Science 203: Software Engineering</title>
+
+    <meta name="description" content="Teaching Slides for Computer Science 203">
+    <meta name="author" content="Gregory M. Kapfhammer">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night-gkapfham.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Install Font Awesome and the Google Web fonts -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet" type="text/css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+      if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+      }
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section data-background-transition="none" data-background="https://live.staticflickr.com/3858/33384813385_1ebe3e5352_b.jpg" style="background: rgba(29,31,33,0.9)">
+          <h1>Computer Science 203:</h1>
+          <h2>Software Engineering</h2>
+          <p>Gregory M. Kapfhammer</p>
+        </section>
+
+        <section>
+          <h1>Color Scheme</h1>
+          <p class="fragment"><b class="orange">Key Concept</b></p>
+          <p class="fragment"><b class="purple">Corresponding Diagram</b></p>
+          <p class="fragment"><b class="green">In-Class Discussion</b></p>
+          <p class="fragment"><b class="red">In-Class Activity</b></p>
+          <p class="fragment"><b class="blue">Details in the Textbook</b></p>
+        </section>
+
+        <section>
+          <h1>Python Testing with Pytest</h1>
+          <p class="fragment">Chapters 3 through 4</p>
+        </section>
+
+        <section>
+          <h1>Pytest Fixtures</h1>
+        </section>
+
+        <section>
+          <h1>Pytest Fixtures</h1>
+          <p class="fragment">Contain arbitrary Python source code</p>
+          <p class="fragment">Used to setup and/or teardown during testing</p>
+          <p class="fragment">"Input" to a test function</p>
+        </section>
+
+        <section>
+          <h1><b class="orange">Single fixture</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Multiple fixture</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Setup</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Teardown</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">What are the benefits of using fixtures?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Sharing through conftest.py</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">What are the benefits of using conftest?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Kinda like making a plugin!</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="red">Application to the software project</b></h1>
+        </section>
+
+        <section>
+          <h1>Builtin Fixtures</h1>
+        </section>
+
+        <section>
+          <h1>Builtin Fixtures</h1>
+          <p class="fragment">Provided as part of a Pytest distribution</p>
+          <p class="fragment">Supports reuse of commonly needed features</p>
+          <p class="fragment">Example: <code>tmpdir</code> and <code>tmpdir_factory</code></p>
+        </section>
+
+        <section>
+          <h1><b class="orange">"Mocking" when testing</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Benefits of "mocking"?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Using <code>tmpdir</code></b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Using <code>pytestconfig</code></b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Test independence</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange"><code>pytest-randomly</code></b></h1>
+        </section>
+
+        <section>
+          <h1><b class="green">Benefits of test independence?</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Using <code>cache</code></b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Using <code>--last-failed</code></b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Using <code>--failed-first</code></b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">We need to maintain test history!</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Test suite prioritization</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">"Put your best test forward"</b></h1>
+        </section>
+
+        <section>
+          <h1>Reorder the Tests</h1>
+          <p class="fragment">Random</p>
+          <p class="fragment">Fastest tests first</p>
+          <p class="fragment">High coverage tests first</p>
+          <p class="fragment">High mutation tests first</p>
+          <p class="fragment">Combine these strategies</p>
+        </section>
+
+        <section>
+          <h1><b class="blue">See pages 83 through 85</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Using <code>capsys</code></b></h1>
+        </section>
+
+        <section>
+          <h1><b class="orange">Changes Pytest's behavior</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="red">Application to the software project</b></h1>
+        </section>
+
+        <section>
+          <h1><b class="red">Next, learn more about plugins!</b></h1>
+        </section>
+
+      <script src="lib/js/head.min.js"></script>
+      <script src="js/reveal.min.js"></script>
+
+      <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+          controls: true,
+          progress: true,
+          history: true,
+          center: true,
+
+          theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+          transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+          // Parallax scrolling
+          // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+          // parallaxBackgroundSize: '2100px 900px',
+
+          // Optional libraries used to extend on reveal.js
+          dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          ]
+        });
+
+      </script>
+
+  </body>
+</html>
